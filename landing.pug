@@ -1,0 +1,15 @@
+extend componentes/plantilla.pug 
+block contenidos
+    section.intro 
+        .intro__imagen: img(src="images/imagen.png") 
+        .intro__contenido
+            h2 #{titulos[0]}
+            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat vitae reiciendis aspernatur ipsa error vero consectetur. Incidunt, reprehenderit neque. Molestiae 
+                span Molestiae fugit ipsa sapiente fuga.
+            a.boton Leer
+    main.contenido 
+        +caja('imagen.png', titulos[1], 'Fugiat vitae reiciendis aspernatur ipsa error vero consectetur. Incidunt, ')
+        +caja('imagen.png', titulos[2], 'Fugiat vitae reiciendis aspernatur ipsa error vero consectetur. Incidunt, ')
+        +caja('imagen.png', titulos[3], 'Fugiat vitae reiciendis aspernatur ipsa error vero consectetur. Incidunt, ')
+     
+           
